@@ -1,0 +1,9 @@
+Como generar y ejecutar el TP
+
+1) Ejecutar Grupo 09.exe (Generará tabla de símbolos, intermedia.txt y Final.asm)
+Aclaración: El archivo generarasm.bat hace exactamente lo mismo que Grupo09.exe, se dejó como backup.
+
+2)Desde DOSBox, ejectuar el comando Grupo09.bat para generar el ejecutable y ejecutarlo.
+
+Aclaraciones:
+En la carpeta raíz del TP se incluyeron algunos archivos como: RTM.EXE, TASM.EXE, TLINK.EXE y DPMI16BI.OVL ya que sin ellos no se generaba el ejecutable final.

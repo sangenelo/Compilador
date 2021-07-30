@@ -1,0 +1,126 @@
+DECVAR
+numero,numero2,numero3,centena,saldo,bandera,suma,deudor:INTEGER;
+flotante,pi,uncuarto:FLOAT;
+cadena,teclado,mensaje,texto:STRING;
+ENDDEC
+flotante=2.5
+pi=3.14
+uncuarto=.25
+-/ esto es un comentario /-
+-//-
+-/ esto es un comentario y dentro hay otro -/comentario/- /-
+WRITE "Ingrese el saldo"
+READ saldo
+centena=100
+numero=numero2=numero3=centena+saldo*2
+IF (saldo <= 10)
+WRITE "Saldo casi en 0"
+bandera = 1
+ENDIF
+IF (saldo > 0 AND saldo <1000)
+WRITE "Le queda poco saldo"
+ENDIF
+suma=100
+numero=100
+numero2=101
+numero3=numero2+1
+WHILE
+suma IN [saldo,numero,numero2,numero3]
+DO
+WRITE "Entraste a un bucle"
+suma=suma+1
+ENDWHILE
+-/While anidado/-
+suma=1
+numero=1
+numero2=2
+numero3=3
+WHILE
+suma IN [numero,numero2,numero3]
+DO
+WHILE
+suma IN [numero,numero2]
+DO
+suma=suma+1
+WRITE "Estas en otro bucle"
+ENDWHILE
+ENDWHILE
+-/IF anidado con WHILE dentro/-
+numero=10
+numero2=10
+numero3=5
+suma=10
+centena=10+1
+saldo=10+1+1
+IF (15>numero2-1)
+IF (numero-8<=numero3)
+WRITE "ENTRASTE a un IF anidado"
+ENDIF
+ENDIF
+-/IF con ELSE con IF anidado dentro del ELSE/-
+IF (saldo>1000)
+bandera = 1
+ELSE
+IF (NOT saldo>9999)
+saldo = 6000
+ELSE
+bandera = 0
+ENDIF
+saldo = 0
+ENDIF
+WRITE "Suma: Ingrese operando 1"
+READ numero
+WRITE "Suma: Ingrese operando 2"
+READ numero2
+numero3=numero+numero2
+WRITE "Resultado cuenta"
+WRITE numero3
+-/Asignacion Multiple/-
+numero=numero2=numero3=1
+-/Asignacion con expresion/-
+numero=numero2=numero3=suma+1*saldo
+-/A continuacion la seccion con lineas que generan error de compilacion/-
+-/Caso 2: Declaracion de tipos vacia/-
+-/DECVAR/-
+-/ENDDEC/-
+-/Caso 3: String por fuera de la cota /-
+-/cadena="Esto es una cadena con demasiados caracteres."/-
+-/Caso 4 : IF sin acciones /-
+-/IF (saldo <= 0)/-
+-/ENDIF/-
+-/Caso 5: IF sin comparador /-
+-/IF (saldo)/-
+-/a=3/-
+-/ENDIF/-
+-/Caso 6: IF con 3 comparadores /-
+-/IF (saldo==300 AND limite<100 OR limite>500)/-
+-/a=3/-
+-/ENDIF/-
+-/Caso 7: Ciclo while sin acciones /-
+-/WHILE/-
+-/numero IN [numero]/-
+-/DO/-
+-/ENDWHILE/-
+-/Caso 8: Ciclo while sin lista de expresiones /-
+-/WHILE/-
+-/numero IN []/-
+-/DO/-
+-/a=1/-
+-/ENDWHILE/-
+-/Caso 9: Ciclo while sin ENDWHILE /-
+-/WHILE/-
+-/numero IN [num1,num2]/-
+-/DO/-
+-/a=1/-
+-/Caso 10: Entero fuera de rango /-
+-/numero=65590 /-
+-/Caso 11: Flotante fuera de rango /-
+-/numero=0.0000000000000000000000000000000000000000000000111 /-
+-/Caso 12: Caracteres invalidos /-
+-/id=@ /-
+-/id=$ /-
+-/id=% /-
+-/Caso 13: Asignaciones con tipos incompatibles /-
+-/numero=numero2=cadena=suma+1*saldo /-
+-/cadena=numero="hola"/-
+-/numero=numero2="hola"+"chau"/-

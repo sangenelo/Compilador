@@ -1,0 +1,54 @@
+NOMBRE                        TIPO                          VALOR                         LONGITUD                      
+numero                        INTEGER                       --                            
+numero2                       INTEGER                       --                            
+numero3                       INTEGER                       --                            
+centena                       INTEGER                       --                            
+saldo                         INTEGER                       --                            
+bandera                       INTEGER                       --                            
+suma                          INTEGER                       --                            
+deudor                        INTEGER                       --                            
+flotante                      FLOAT                         --                            
+pi                            FLOAT                         --                            
+uncuarto                      FLOAT                         --                            
+cadena                        STRING                        --                            6
+teclado                       STRING                        --                            7
+mensaje                       STRING                        --                            7
+texto                         STRING                        --                            5
+_2.5                          CTE_FLOTANTE                  2.5                           
+_3.14                         CTE_FLOTANTE                  3.14                          
+_0.25                         CTE_FLOTANTE                  0.25                          
+_"Ingrese el saldo"           CTE_CADENA                    "Ingrese el saldo"            18
+_100                          CTE_ENTERA                    100                           
+_2                            CTE_ENTERA                    2                             
+@aux32                                                      --                            
+@aux33                                                      --                            
+_10                           CTE_ENTERA                    10                            
+_"Saldo casi en 0"            CTE_CADENA                    "Saldo casi en 0"             17
+_1                            CTE_ENTERA                    1                             
+_0                            CTE_ENTERA                    0                             
+_1000                         CTE_ENTERA                    1000                          
+_"Le queda poco saldo"        CTE_CADENA                    "Le queda poco saldo"         21
+_101                          CTE_ENTERA                    101                           
+@aux66                                                      --                            
+_"Entraste a un bucle"        CTE_CADENA                    "Entraste a un bucle"         21
+@aux85                                                      --                            
+_3                            CTE_ENTERA                    3                             
+@aux120                                                     --                            
+_"Estas en otro bucle"        CTE_CADENA                    "Estas en otro bucle"         21
+_5                            CTE_ENTERA                    5                             
+@aux140                                                     --                            
+@aux145                                                     --                            
+@aux147                                                     --                            
+_15                           CTE_ENTERA                    15                            
+@aux153                                                     --                            
+_8                            CTE_ENTERA                    8                             
+@aux158                                                     --                            
+_"ENTRASTE a un IF anidado"   CTE_CADENA                    "ENTRASTE a un IF anidado"    26
+_9999                         CTE_ENTERA                    9999                          
+_6000                         CTE_ENTERA                    6000                          
+_"Suma: Ingrese operando 1"   CTE_CADENA                    "Suma: Ingrese operando 1"    26
+_"Suma: Ingrese operando 2"   CTE_CADENA                    "Suma: Ingrese operando 2"    26
+@aux191                                                     --                            
+_"Resultado cuenta"           CTE_CADENA                    "Resultado cuenta"            18
+@aux204                                                     --                            
+@aux205                                                     --                            
